@@ -1,3 +1,41 @@
-<p>
-  vehicle-list works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>TuSegundazo.com</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="/assets/banner.png" class="img-fluid" alt="Banner">
+      <br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehicle of vehicles">
+            <th scope="row">{{vehicle.id}}</th>
+            <td>{{vehicle.marca}}</td>
+            <td>{{vehicle.linea}}</td>
+            <td>{{vehicle.modelo}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+    </div>
+  </div>
+</div>
+<footer class="text-center text-lg-start bg-light">
+  <div class="container">
+    <div class="text-center p-4">Contact us: +573102105253 - info@tusegundazo.com - @tusegundazo</div>
+  </div>
+</footer>
